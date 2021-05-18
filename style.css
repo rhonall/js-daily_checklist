@@ -1,0 +1,143 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    position: relative;
+
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/bg.png);
+    background-attachment: fixed;
+    opacity: 0.75;
+    z-index: -1;
+}
+
+h1, 
+h2, 
+p, 
+li, 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+span, 
+i,
+.new_task, 
+.icon {
+    cursor: pointer;
+}
+
+.container {
+    width: 45%;
+    background: #FAACA8;
+    background: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+    border-radius: 10px;
+    margin: 5rem 0;
+    overflow: hidden;
+
+}
+
+.icon {
+    border: 2px dashed rgba(184, 48, 48, 0.555);
+    background-color: rgba(230, 230, 230, 0.534);
+    transition: transform 100ms ease-in-out;
+}
+
+.icon:hover, 
+.icon:focus {
+    transform: scale(1.05);
+}
+
+
+.title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+    background-color: rgba(163, 101, 101, 0.616);
+    padding: .08em 0;
+}
+
+.top {
+    margin: 1rem 0;
+}
+
+h2 {
+    text-align: left;
+    font-size: 1rem;
+    display: inline-block;
+    background-color: rgba(143, 143, 143, 0.781);
+    border-radius: 10px;
+    padding: 0.3rem 1rem;
+    margin: 1rem 1rem;
+}
+
+
+.residents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: rgba(145, 116, 116, 0.342);
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.2rem;
+}
+
+.item .checked {
+    text-decoration: line-through;
+  }
+
+
+
+ul li:nth-child(odd) {
+    background-color: rgba(165, 154, 154, 0.342);
+}
+
+.new_task {
+    width: 80%;
+    display: block;
+    margin: 2rem auto;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.2rem;
+    padding: .5em 0;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 4px 4px 2px rgba(209, 209, 209, 0.781);
+}
+
+
+
+
+
